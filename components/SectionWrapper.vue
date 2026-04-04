@@ -1,10 +1,10 @@
 <template>
   <section
     :id="id"
-    class="section-padding"
+    class="section-padding relative"
     :class="className"
   >
-    <div class="container-custom">
+    <div class="container-custom relative z-10">
       <div
         v-if="title || subtitle"
         class="text-center mb-12 sm:mb-16"
@@ -23,7 +23,7 @@
         </p>
         <div
           v-if="divider"
-          class="w-16 h-1 bg-[var(--color-accent)] rounded-full mx-auto mt-6"
+          class="w-16 h-0.5 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-accent-secondary)] rounded-full mx-auto mt-6"
         />
       </div>
       <slot />
@@ -46,6 +46,6 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const className = computed(() =>
-  props.variant === 'alternate' ? 'bg-[var(--color-bg-secondary)]' : '',
+  props.variant === 'alternate' ? 'bg-[var(--color-bg-secondary)]/50' : 'bg-[var(--color-bg-primary)]/50',
 )
 </script>

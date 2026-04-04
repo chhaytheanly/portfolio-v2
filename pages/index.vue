@@ -1,16 +1,9 @@
 <template>
-  <div>
+  <div class="relative">
     <section class="min-h-[90vh] flex flex-col items-center justify-center container-custom text-center relative overflow-hidden">
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute inset-0 bg-dot-pattern" />
-        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent-10 rounded-full blur-3xl animate-float" />
-        <div
-          class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl animate-float"
-          style="animation-delay: -3s;"
-        />
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-5 rounded-full blur-3xl" />
-      </div>
-
+      <!-- Subtle background decoration -->
+      <DigitalBackground />
+      
       <div class="relative z-10">
         <div
           v-motion="'fade-in'"
@@ -30,7 +23,7 @@
           v-motion="'fade-in-up'"
           class="heading-xl mb-6"
         >
-          <span class="text-gradient">{{ $t('hero.title') }}</span>
+          <span class="text-gradient-primary">{{ $t('hero.title') }}</span>
         </h1>
         <p
           v-motion="'fade-in-up'"
@@ -93,10 +86,11 @@
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-link group"
+            class="social-link-enhanced group"
           >
+            <div class="icon-bg" />
             <svg
-              class="w-5 h-5"
+              class="w-5 h-5 relative z-10"
               fill="currentColor"
               viewBox="0 0 24 24"
             ><path
@@ -109,10 +103,11 @@
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-link group"
+            class="social-link-enhanced group"
           >
+            <div class="icon-bg" />
             <svg
-              class="w-5 h-5"
+              class="w-5 h-5 relative z-10"
               fill="currentColor"
               viewBox="0 0 24 24"
             ><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
@@ -121,10 +116,11 @@
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-link group"
+            class="social-link-enhanced group"
           >
+            <div class="icon-bg" />
             <svg
-              class="w-5 h-5"
+              class="w-5 h-5 relative z-10"
               fill="currentColor"
               viewBox="0 0 24 24"
             ><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
@@ -184,7 +180,7 @@
       :title="$t('projects.pageTitle')"
       :subtitle="$t('projects.pageSubtitle')"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <ScrollReveal
           v-for="(project, i) in projects"
           :key="project.slug"
@@ -192,10 +188,10 @@
         >
           <NuxtLink
             :to="localePath(`/projects/${project.slug}`)"
-            class="project-card group block"
+            class="project-card group block h-full"
           >
-            <div class="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg-glass)] backdrop-blur-xl transition-all duration-500 group-hover:border-[var(--color-accent)]/30 group-hover:shadow-xl group-hover:shadow-[var(--color-accent)]/10 group-hover:-translate-y-2">
-              <div class="aspect-video overflow-hidden">
+            <div class="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg-glass)] backdrop-blur-xl transition-all duration-300 group-hover:border-[var(--color-accent)]/30 group-hover:shadow-lg group-hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video overflow-hidden flex-shrink-0">
                 <NuxtImg
                   v-if="project.thumbnail"
                   :src="project.thumbnail"
@@ -224,7 +220,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-6">
+              <div class="p-6 flex flex-col flex-1">
                 <div class="flex items-start justify-between gap-2 mb-2">
                   <h3 class="heading-sm group-hover:text-[var(--color-accent)] transition-colors duration-300">{{ project.title }}</h3>
                   <svg
@@ -241,7 +237,7 @@
                     />
                   </svg>
                 </div>
-                <p class="body-md mb-4 line-clamp-2">{{ project.description }}</p>
+                <p class="body-md mb-4 line-clamp-2 flex-1">{{ project.description }}</p>
                 <div class="flex flex-wrap gap-2">
                   <BaseBadge
                     v-for="tech in project.tech.slice(0, 3)"
@@ -290,7 +286,7 @@
       :subtitle="$t('blog.pageSubtitle')"
       variant="alternate"
     >
-      <div class="max-w-3xl mx-auto space-y-4">
+      <div class="max-w-4xl mx-auto space-y-4">
         <ScrollReveal
           v-for="(post, i) in posts"
           :key="post.slug"
@@ -298,7 +294,7 @@
         >
           <NuxtLink
             :to="localePath(`/blog/${post.slug}`)"
-            class="blog-card group block glass-card p-6 transition-all duration-500 hover:border-[var(--color-accent)]/30 hover:shadow-xl hover:shadow-[var(--color-accent)]/5 hover:-translate-y-1"
+            class="blog-card group block p-6 transition-all duration-500"
           >
             <div class="flex items-start justify-between gap-4">
               <div class="flex-1">
@@ -502,3 +498,38 @@ function formatDate(date: string) {
   return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 </script>
+
+<style scoped>
+.social-link-enhanced {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: var(--color-text-tertiary);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.social-link-enhanced .icon-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+}
+
+.social-link-enhanced:hover {
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.25);
+}
+
+.social-link-enhanced:hover .icon-bg {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
