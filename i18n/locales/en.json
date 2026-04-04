@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Your Name",
+    "subtitle": "Full-stack developer & designer crafting digital experiences that are beautiful, accessible, and blazingly fast.",
+    "available": "Available for new projects",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Get in Touch"
+  },
+  "about": {
+    "pageTitle": "About Me",
+    "bio1": "I'm a full-stack developer with 5+ years of experience building web applications that users love. I specialize in Nuxt.js, Vue, and modern TypeScript, with a deep passion for performance, accessibility, and clean code.",
+    "bio2": "When I'm not coding, you'll find me contributing to open-source projects, writing about web development, or exploring the latest in AI and design systems.",
+    "downloadResume": "Download Resume",
+    "skills": "Skills & Technologies"
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "pageSubtitle": "A selection of my recent work.",
+    "liveDemo": "Live Demo",
+    "github": "GitHub",
+    "all": "All",
+    "fullstack": "Full-Stack",
+    "frontend": "Frontend",
+    "mobile": "Mobile",
+    "backToProjects": "Back to Projects",
+    "viewAll": "View All"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageSubtitle": "Thoughts, tutorials, and case studies on web development and design.",
+    "minRead": "min read",
+    "readMore": "Read More",
+    "backToPosts": "Back to Posts",
+    "previous": "← Previous",
+    "next": "Next →",
+    "viewAll": "View All"
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "pageSubtitle": "Get in touch for collaborations, freelance work, or just to say hi.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you{'@'}example.com",
+    "messagePlaceholder": "Tell me about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again.",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email",
+    "messageRequired": "Message is required"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Nuxt 3 & Tailwind CSS"
+  },
+  "common": {
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "scrollDown": "Scroll down"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home"
+  }
+}

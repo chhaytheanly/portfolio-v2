@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "ទំព័រដើម",
+    "about": "អំពី",
+    "projects": "គម្រោង",
+    "blog": "ប្លក់",
+    "contact": "ទំនាក់ទំនង"
+  },
+  "common": {
+    "darkMode": "របៀបងងឹត",
+    "language": "ភាសា"
+  },
+  "footer": {
+    "rights": "រក្សាសិទ្ធិគ្រប់យ៉ាង។",
+    "builtWith": "បង្កើតដោយ Nuxt & Tailwind CSS"
+  },
+  "hero": {
+    "available": "មានសម្រាប់ការងារ",
+    "greeting": "សួស្តី ខ្ញុំឈ្មោះ",
+    "title": "ឈ្មោះរបស់អ្នក",
+    "subtitle": "អ្នកអភិវឌ្ឍន៍ Full-Stack & អ្នករចនា",
+    "ctaProjects": "មើលគម្រោង",
+    "ctaContact": "ទាក់ទងខ្ញុំ"
+  },
+  "about": {
+    "pageTitle": "អំពីខ្ញុំ",
+    "bio1": "ខ្ញុំជាអ្នកអភិវឌ្ឍន៍ full-stack ដែលមានចំណង់ចំណូលចិត្តក្នុងការបង្កើតកម្មវិធីវេបសាយដែលស្រស់ស្អាត និងមានមុខងារល្អ។",
+    "bio2": "ដោយមានជំនាញក្នុងបច្ចេកវិទ្យាវេបសាយទំនើប ខ្ញុំបង្កើតបទពិសោធន៍ដ៏រលូនពីមុខទៅក្រោយ។",
+    "downloadResume": "ទាញយកប្រវត្តិរូបសង្ខេប",
+    "skills": "ជំនាញ"
+  },
+  "contact": {
+    "pageTitle": "ទំនាក់ទំនង",
+    "pageSubtitle": "ទាក់ទងមកខ្ញុំ",
+    "name": "ឈ្មោះ",
+    "namePlaceholder": "ឈ្មោះរបស់អ្នក",
+    "email": "អ៊ីមែល",
+    "emailPlaceholder": "email របស់អ្នក",
+    "message": "សារ",
+    "messagePlaceholder": "សាររបស់អ្នក...",
+    "send": "ផ្ញើសារ",
+    "sending": "កំពុងផ្ញើ...",
+    "success": "សារត្រូវបានផ្ញើដោយជោគជ័យ!",
+    "error": "បរាជ័យក្នុងការផ្ញើសារ។ សូមព្យាយាមម្តងទៀត។",
+    "nameRequired": "ឈ្មោះគឺចាំបាច់",
+    "emailRequired": "អ៊ីមែលគឺចាំបាច់",
+    "emailInvalid": "សូមបញ្ចូលអ៊ីមែលដែលត្រឹមត្រូវ",
+    "messageRequired": "សារគឺចាំបាច់"
+  },
+  "projects": {
+    "pageTitle": "គម្រោង",
+    "pageSubtitle": "ការតាំងបង្ហាញការងាររបស់ខ្ញុំ",
+    "viewAll": "មើលគម្រោងទាំងអស់",
+    "all": "ទាំងអស់",
+    "fullstack": "Full-Stack",
+    "frontend": "Frontend",
+    "mobile": "Mobile",
+    "backToProjects": "ត្រឡប់ទៅគម្រោង",
+    "liveDemo": "ការបង្ហាញផ្ទាល់"
+  },
+  "blog": {
+    "pageTitle": "ប្លក់",
+    "pageSubtitle": "គំនិត និងអត្ថបទ",
+    "viewAll": "មើលអត្ថបទទាំងអស់",
+    "minRead": "នាទីអាន",
+    "backToPosts": "ត្រឡប់ទៅអត្ថបទ",
+    "previous": "មុន",
+    "next": "បន្ទាប់",
+    "readMore": "អានបន្ថែម"
+  },
+  "notFound": {
+    "title": "រកមិនឃើញទំព័រ",
+    "description": "ទំព័រដែលអ្នកកំពុងស្វែងរកមិនមានទេ។",
+    "goHome": "ត្រឡប់ទំព័រដើម"
+  },
+  "welcome": "សូមស្វាគមន៍",
+  "navigation": {
+    "home": "ទំព័រដើម",
+    "about": "អំពី",
+    "contact": "ទំនាក់ទំនង"
+  }
+}
