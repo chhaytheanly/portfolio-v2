@@ -21,15 +21,15 @@
       </button>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       <NuxtLink
         v-for="project in filteredProjects"
         :key="project.slug"
         :to="localePath(`/projects/${project.slug}`)"
-        class="project-card group block"
+        class="project-card group block h-full"
       >
-        <div class="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg-glass)] backdrop-blur-xl transition-all duration-500 group-hover:border-[var(--color-accent)]/30 group-hover:shadow-xl group-hover:shadow-[var(--color-accent)]/10 group-hover:-translate-y-2">
-          <div class="aspect-video overflow-hidden">
+        <div class="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg-glass)] backdrop-blur-xl transition-all duration-300 group-hover:border-[var(--color-accent)]/30 group-hover:shadow-lg group-hover:-translate-y-1 h-full flex flex-col">
+          <div class="aspect-video overflow-hidden flex-shrink-0">
             <NuxtImg
               v-if="project.thumbnail"
               :src="project.thumbnail"
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <div class="p-6">
+          <div class="p-6 flex flex-col flex-1">
             <div class="flex items-start justify-between gap-2 mb-2">
               <h3 class="heading-sm group-hover:text-[var(--color-accent)] transition-colors duration-300">{{ project.title }}</h3>
               <svg
@@ -75,7 +75,7 @@
                 />
               </svg>
             </div>
-            <p class="body-md mb-4 line-clamp-2">{{ project.description }}</p>
+            <p class="body-md mb-4 line-clamp-2 flex-1">{{ project.description }}</p>
             <div class="flex flex-wrap gap-2">
               <BaseBadge
                 v-for="tech in project.tech"
