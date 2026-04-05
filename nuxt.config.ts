@@ -79,7 +79,7 @@ export default defineNuxtConfig({
       failOnError: false,
     },
     routeRules: {
-      '/': { static: true },
+      '/portfolio-v2': { static: true },
     },
   },
 
