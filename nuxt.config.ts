@@ -28,9 +28,9 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   site: {
-    url: 'https://yourdomain.com',
-    name: 'Your Name — Portfolio',
-    description: 'Full-stack developer & designer crafting digital experiences',
+    url: 'https://chhaytheanly.github.io/portfolio-v2',
+    name: 'Chhaythean Portfolio',
+    description: 'AI Enthusiast',
     defaultLocale: 'en',
   },
 
