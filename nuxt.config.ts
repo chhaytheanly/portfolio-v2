@@ -11,10 +11,12 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
   ],
 
-  ssr: true,
+  ssr: false,
   devtools: { enabled: true },
 
   app: {
+    baseURL: '/portfolio-v2/',
+    buildAssetsDir: '/portfolio-v2/_nuxt/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
@@ -45,6 +47,11 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/api/og'],
+      crawlLinks: true,
+      failOnError: false,
+    },
+    routeRules: {
+      '/**': { static: true },
     },
   },
 
@@ -104,6 +111,7 @@ export default defineNuxtConfig({
   image: {
     format: ['jpg', 'png', 'webp', 'avif'],
     quality: 80,
+    provider: 'static',
   },
 
   motion: {
@@ -133,5 +141,6 @@ export default defineNuxtConfig({
 
   sitemap: {
     enabled: true,
+    url: "https://chhaytheanly.github.io/portfolio-v2",
   },
 })
