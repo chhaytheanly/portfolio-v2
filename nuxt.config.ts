@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
-    '@nuxt/image',
     '@nuxt/fonts',
     '@vueuse/motion/nuxt',
     '@nuxt/eslint',
@@ -135,12 +134,6 @@ export default defineNuxtConfig({
     experimental: {
       hmr: false,
     },
-  },
-
-  image: {
-    format: ['jpg', 'png', 'webp', 'avif'],
-    quality: 80,
-    provider: 'static',
   },
 
   motion: {

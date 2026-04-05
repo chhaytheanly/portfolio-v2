@@ -3,9 +3,9 @@ title: "Khmer MNIST Digit Classification"
 slug: "khmer-mnist"
 description: "Custom Khmer handwritten digit classification pipeline with advanced preprocessing and a scratch-built ResNet model"
 longDescription: "Developed and improved a Khmer handwritten digit classification system by building a compact ResNet architecture from scratch and designing an advanced preprocessing pipeline tailored to noisy, real-world character images. Applied augmentation, normalization, and denoising strategies to improve robustness and generalization. Trained and validated the model with careful experimentation on architecture depth, optimization settings, and regularization, ultimately achieving 99.3% validation accuracy. This contribution demonstrates practical deep learning model design, data-centric optimization, and strong performance for Khmer OCR foundations."
-thumbnail: "/project/khmer-arn.png"
+thumbnail: "/project/khmer-mnist.png"
 images:
-  - "/project/khmer-arn.png"
+  - "/project/khmer-mnist.png"
   - "/images/projects/khmer-mnist-2.jpg"
   - "/images/projects/khmer-mnist-3.jpg"
 tech: ["Python", "PyTorch", "ResNet", "OpenCV", "NumPy", "Scikit-learn"]
