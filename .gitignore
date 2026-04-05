@@ -85,6 +85,8 @@ dist/
 
 # Keep these in public
 !public/image/
+!public/project/
+!public/logo/
 !public/resume.pdf
 
 .data/
