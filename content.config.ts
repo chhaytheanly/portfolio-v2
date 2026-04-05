@@ -16,6 +16,7 @@ const project = defineCollection({
     githubUrl: z.string().optional(),
     featured: z.boolean(),
     date: z.string(),
+    navigation: z.any().optional(),
   }),
 })
 
@@ -31,6 +32,7 @@ const blog = defineCollection({
     date: z.string(),
     readTime: z.number(),
     author: z.string(),
+    navigation: z.any().optional(),
   }),
 })
 

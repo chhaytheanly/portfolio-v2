@@ -3,9 +3,9 @@ title: "AMS Department Website"
 slug: "ams-website"
 description: "Full-stack website for the Department of Applied Mathematics and Statistics with admin dashboard and role-based access control"
 longDescription: "Served as the primary contributor for backend API development using NestJS, designing scalable and maintainable RESTful services. Developed a dynamic Admin Dashboard UI with React, enabling real-time content management and role-based access control. Implemented DevOps practices, including Docker containerization and GitLab CI/CD pipelines for automated testing and deployment. Collaborated with the team to ensure system reliability, performance optimization, and maintainable code architecture."
-thumbnail: "/images/projects/ams-website.jpg"
+thumbnail: "/project/ams.png"
 images:
-  - "/images/projects/ams-website-1.jpg"
+  - "/project/ams.png"
   - "/images/projects/ams-website-2.jpg"
   - "/images/projects/ams-website-3.jpg"
 tech: ["NestJS", "TypeScript", "React", "Docker", "GitLab CI/CD", "PostgreSQL"]

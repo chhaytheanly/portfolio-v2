@@ -3,9 +3,9 @@ title: 'Course Recommendation System'
 slug: 'course-recommendation'
 description: 'Full-stack ML-powered course recommendation system using content-based and collaborative filtering algorithms'
 longDescription: 'Designed and developed a full-stack web application for personalized course recommendation using the Coursera dataset. Implemented and compared multiple machine learning algorithms, including content-based filtering and collaborative filtering, to generate personalized recommendations. Integrated ML models into a Django-based production-ready system with RESTful endpoints and dynamic user interaction. Successfully presented the project at the 14th Scientific Day Showcase and was selected as one of the outstanding candidates. Strengthened expertise in recommender systems, model evaluation strategies, and deploying ML applications in real-world web environments.'
-thumbnail: '/images/projects/course-recommendation.jpg'
+thumbnail: '/project/course.png'
 images:
-  - '/images/projects/course-recommendation-1.jpg'
+  - '/project/course-recommendation-1.jpg'
   - '/images/projects/course-recommendation-2.jpg'
   - '/images/projects/course-recommendation-3.jpg'
 tech: ['Python', 'Django', 'Scikit-learn', 'Pandas', 'NumPy', 'SQLite', 'PostgreSQL']

@@ -10,7 +10,7 @@
           class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-accent-light)] border border-[var(--color-accent)]/20 mb-6">
           <span class="w-2 h-2 rounded-full bg-[var(--color-accent)] animate-pulse" />
           <span class="text-sm font-medium text-[var(--color-accent)]">{{ $t('hero.available') || 'Available for work'
-            }}</span>
+          }}</span>
         </div>
         <p v-motion="'fade-in'" :style="{ transitionDelay: '50ms' }"
           class="text-lg sm:text-xl text-[var(--color-text-secondary)] mb-4 font-medium">
@@ -97,7 +97,7 @@
     <SectionWrapper :title="$t('projects.pageTitle')" :subtitle="$t('projects.pageSubtitle')">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <ScrollReveal v-for="(project, i) in projects" :key="project.slug" :delay="(i % 3) * 100">
-          <NuxtLink :to="localePath(`/projects/${project.slug}`)" class="project-card group block h-full">
+          <NuxtLink :to="localePath(`/project/${project.slug}`)" class="project-card group block h-full">
             <div
               class="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-bg-glass)] backdrop-blur-xl transition-all duration-300 group-hover:border-[var(--color-accent)]/30 group-hover:shadow-lg group-hover:-translate-y-1 h-full flex flex-col">
               <div class="aspect-video overflow-hidden flex-shrink-0">
@@ -164,7 +164,7 @@
                   <time class="text-sm text-[var(--color-text-tertiary)]">{{ formatDate(post.date) }}</time>
                   <span class="text-sm text-[var(--color-text-tertiary)]">·</span>
                   <span class="text-sm text-[var(--color-text-tertiary)]">{{ post.readTime }} {{ $t('blog.minRead')
-                    }}</span>
+                  }}</span>
                 </div>
                 <h3 class="heading-sm mb-2 group-hover:text-[var(--color-accent)] transition-colors duration-300">{{
                   post.title }}</h3>
