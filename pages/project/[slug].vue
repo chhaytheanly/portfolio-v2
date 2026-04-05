@@ -46,6 +46,7 @@ definePageMeta({
 
 const route = useRoute()
 const localePath = useLocalePath()
+const imageBase = useImageBase()
 
 const slug = route.params.slug as string
 

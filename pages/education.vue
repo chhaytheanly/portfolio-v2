@@ -24,7 +24,7 @@
               <div class="flex items-start gap-4 mb-4">
                 <div
                   class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-[var(--color-bg-tertiary)] border border-[var(--color-border)]/60 flex-shrink-0">
-                  <img v-if="edu.logo" :src="rt(edu.logo)" :alt="rt(edu.institution)"
+                  <img v-if="edu.logo" :src="imageBase(rt(edu.logo))" :alt="rt(edu.institution)"
                     class="w-full h-full object-cover" loading="lazy" width="96" height="96" />
                   <div v-else class="w-full h-full flex items-center justify-center text-[var(--color-accent)]">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,6 +117,7 @@ definePageMeta({
 })
 
 const { t, te, tm, rt } = useI18n()
+const imageBase = useImageBase()
 
 const educationItems = computed(() => {
   const items = tm('education.items') as unknown
