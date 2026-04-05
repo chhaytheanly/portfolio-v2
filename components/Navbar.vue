@@ -1,57 +1,36 @@
 <template>
-  <header
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-    :class="{
-      'bg-[var(--color-bg-glass)] backdrop-blur-xl border-b border-[var(--color-border)] shadow-sm': isScrolled
-    }"
-  >
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" :class="{
+    'bg-[var(--color-bg-glass)] backdrop-blur-xl border-b border-[var(--color-border)] shadow-sm': isScrolled
+  }">
     <nav class="container-custom flex items-center justify-between h-16 sm:h-20">
-      <!-- Logo -->
-      <NuxtLink
-        :to="localePath('/')"
-        class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity"
-      >
-        <span class="text-gradient">YN</span>
+      <NuxtLink :to="localePath('/')" class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
+        <img src="/image/geek.jpg" alt="chhaythean_logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full" />
       </NuxtLink>
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-2">
-        <NuxtLink
-          v-for="item in navItems"
-          :key="item.to"
-          :to="localePath(item.to)"
+        <NuxtLink v-for="item in navItems" :key="item.to" :to="localePath(item.to)"
           class="nav-link px-3 py-2 text-sm font-medium relative"
-          :class="{ 'nav-link--active': isActiveRoute(item.to) }"
-        >
+          :class="{ 'nav-link--active': isActiveRoute(item.to) }">
           {{ item.label }}
           <span class="nav-link-underline" />
         </NuxtLink>
       </div>
 
       <div class="flex items-center gap-3">
-        <!-- 🌐 Language Dropdown -->
         <div class="relative">
-          <button
-            ref="langBtn"
+          <button ref="langBtn"
             class="p-2 rounded-full hover:bg-[var(--color-bg-tertiary)] transition flex items-center justify-center"
-            @click="toggleLang"
-          >
+            @click="toggleLang">
             <FontAwesomeIcon icon="fa-solid fa-language" class="text-base" aria-hidden="true" />
             <span class="sr-only">Language</span>
           </button>
 
           <Transition name="dropdown">
-            <div
-              v-if="openLang"
-              ref="langMenu"
-              class="absolute right-0 mt-2 w-40 bg-[var(--color-bg-glass)] backdrop-blur-xl border border-[var(--color-border)] rounded-xl shadow-lg overflow-hidden"
-            >
-              <button
-                v-for="loc in availableLocales"
-                :key="loc.code"
-                @click="switchLocale(loc.code)"
-                class="w-full flex items-center justify-between px-4 py-2 text-sm hover:bg-[var(--color-bg-tertiary)] transition"
-              >
+            <div v-if="openLang" ref="langMenu"
+              class="absolute right-0 mt-2 w-40 bg-[var(--color-bg-glass)] backdrop-blur-xl border border-[var(--color-border)] rounded-xl shadow-lg overflow-hidden">
+              <button v-for="loc in availableLocales" :key="loc.code" @click="switchLocale(loc.code)"
+                class="w-full flex items-center justify-between px-4 py-2 text-sm hover:bg-[var(--color-bg-tertiary)] transition">
                 <span>
                   {{ getFlag(loc.code) }} {{ loc.name }}
                 </span>
@@ -64,10 +43,7 @@
         <ThemeToggle />
 
         <!-- Mobile -->
-        <button
-          class="md:hidden p-2"
-          @click="mobileMenuOpen = !mobileMenuOpen"
-        >
+        <button class="md:hidden p-2" @click="mobileMenuOpen = !mobileMenuOpen">
           ☰
         </button>
       </div>
@@ -75,18 +51,10 @@
 
     <!-- Mobile Menu -->
     <Transition name="mobile-menu">
-      <div
-        v-if="mobileMenuOpen"
-        class="md:hidden bg-[var(--color-bg-glass)] border-t"
-      >
+      <div v-if="mobileMenuOpen" class="md:hidden bg-[var(--color-bg-glass)] border-t">
         <div class="p-4 space-y-2">
-          <NuxtLink
-            v-for="item in navItems"
-            :key="item.to"
-            :to="localePath(item.to)"
-            @click="mobileMenuOpen = false"
-            class="block px-4 py-2 rounded hover:bg-[var(--color-bg-tertiary)]"
-          >
+          <NuxtLink v-for="item in navItems" :key="item.to" :to="localePath(item.to)" @click="mobileMenuOpen = false"
+            class="block px-4 py-2 rounded hover:bg-[var(--color-bg-tertiary)]">
             {{ item.label }}
           </NuxtLink>
         </div>
@@ -129,6 +97,8 @@ function toggleLang() {
 const navItems = computed(() => [
   { label: t('nav.home'), to: '/' },
   { label: t('nav.about'), to: '/about' },
+  { label: t('nav.education'), to: '/education' },
+  { label: t('nav.experience'), to: '/experience' },
   { label: t('nav.projects'), to: '/projects' },
   { label: t('nav.blog'), to: '/blog' },
   { label: t('nav.contact'), to: '/contact' }
@@ -196,6 +166,7 @@ onMounted(() => {
 .dropdown-leave-active {
   transition: all 0.2s ease;
 }
+
 .dropdown-enter-from,
 .dropdown-leave-to {
   opacity: 0;

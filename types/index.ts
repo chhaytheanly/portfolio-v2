@@ -1,3 +1,5 @@
+import type { MessageFunction, VueMessageType } from 'vue-i18n'
+
 export interface Project {
   id: string
   title: string

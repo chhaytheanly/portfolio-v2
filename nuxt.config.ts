@@ -69,6 +69,11 @@ export default defineNuxtConfig({
     families: [
       { name: 'Inter', provider: 'google' },
       { name: 'Space Grotesk', provider: 'google' },
+      {
+        name: 'Kantumruy Pro',
+        provider: 'google',
+        subsets: ['khmer', 'latin'],
+      },
     ],
   },
 
