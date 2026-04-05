@@ -25,13 +25,13 @@
   },
   "projects": {
     "pageTitle": "Projets",
-    "pageSubtitle": "Une sélection de projets axés sur l’IA, les systèmes backend et l’ingénierie orientée performance.",
+    "pageSubtitle": "Une sélection de projets axés sur l'IA, les systèmes backend et l'ingénierie orientée performance.",
     "liveDemo": "Démo",
     "github": "GitHub",
     "all": "Tous",
+    "machineLearning": "Apprentissage Automatique",
+    "engine": "Moteur",
     "fullstack": "Full-Stack",
-    "frontend": "Frontend",
-    "mobile": "Mobile",
     "backToProjects": "Retour aux projets",
     "viewAll": "Voir tout"
   },
@@ -68,26 +68,97 @@
     "builtWith": "Construit avec Nuxt 3, Tailwind CSS et un accent sur la performance et l’architecture propre"
   },
   "education": {
-    "pageTitle": "Formation",
+    "pageTitle": "Éducation",
     "pageSubtitle": "Mon parcours académique et mes qualifications",
     "items": [
       {
-        "degree": "Master en Informatique",
-        "institution": "Nom de l'Université",
-        "logo": "/logos/university-master.png",
-        "period": "2022 - 2024",
-        "description": "Spécialisation en intelligence artificielle et apprentissage automatique. Recherche sur le traitement du langage naturel et thèse sur les architectures de réseaux de neurones avancés.",
-        "gpa": "3.9/4.0",
-        "courses": ["Apprentissage Automatique", "Apprentissage Profond", "TLN", "Vision par Ordinateur"]
+        "degree": "Diplôme d'ingénieur en science des données",
+        "institution": "Institut de Technologie du Cambodge (ITC)",
+        "logo": "/logo/ITC.png",
+        "period": "2023 - Prévu en 2027",
+        "description": "Spécialisé en intelligence artificielle et apprentissage automatique. Recherche menée sur le traitement du langage naturel et les architectures avancées de réseaux neuronaux.",
+        "gpa": "4.0/4.0",
+        "courses": ["Apprentissage automatique", "Apprentissage profond", "NLP", "Vision par ordinateur"]
       },
       {
-        "degree": "Licence en Génie Logiciel",
-        "institution": "Nom de l'Université",
-        "logo": "/logos/university-bachelor.png",
-        "period": "2018 - 2022",
-        "description": "Acquisition de solides compétences en développement logiciel, algorithmes et conception de systèmes. Direction de plusieurs projets d'équipe et participation à des compétitions de programmation.",
-        "gpa": "3.8/4.0",
-        "courses": ["Structures de Données", "Algorithmes", "Développement Web", "Systèmes de Gestion de Base de Données"]
+        "degree": "Formation en langue anglaise",
+        "institution": "Centre Australien pour l'Éducation (ACE)",
+        "logo": "/logo/ace_logo.png",
+        "period": "2024 - 2025",
+        "description": "Développement de solides bases en développement logiciel, algorithmes et conception de systèmes. Direction de plusieurs projets en équipe et participation à des compétitions de programmation.",
+        "courses": ["Littérature anglaise", "Expression orale", "Écoute", "Lecture", "Écriture"]
+      },
+      {
+        "degree": "Diplôme de lycée",
+        "institution": "Lycée Reaksmey Sophorn",
+        "logo": "/logo/highschool.png",
+        "period": "2017 - 2022",
+        "description": "Diplômé avec mention, classé dans le top 5 % de la promotion. Actif dans le club d'informatique et participation à des compétitions nationales de programmation.",
+        "gpa": "1er rang",
+        "courses": ["Mathématiques", "Littérature khmère", "Physique", "Chimie", "Histoire", "Biologie", "Anglais"]
+      }
+    ]
+  },
+  "experience": {
+    "pageTitle": "Expérience",
+    "pageSubtitle": "Parcours professionnel et leadership technique dans la recherche, l'éducation et le mentorat.",
+    "items": [
+      {
+        "role": "Secrétaire, Club de recherche fondamentale et appliquée LLM",
+        "organization": "Laboratoire ReDA, ITC",
+        "location": "Phnom Penh, Cambodge",
+        "period": "Juin 2025 -- Présent",
+        "description": "Contribution à la recherche technique en Deep Learning, Traitement du Langage Naturel (NLP) et Prétraitement d'Images. Étude des fondements mathématiques des modèles d'apprentissage automatique, améliorant l'efficacité de l'entraînement et les performances des modèles.",
+        "highlights": [
+          "Amélioration des performances d'un modèle GRU (Gated Recurrent Unit), atteignant une augmentation de 15 % de la précision.",
+          "Organisation et animation de séminaires techniques pour partager les connaissances de recherche avec les membres juniors."
+        ],
+        "skills": ["Deep Learning", "NLP", "Prétraitement d'Images", "GRU", "Recherche"]
+      },
+      {
+        "role": "Instructeur en Programmation",
+        "organization": "Institut de Technologie du Cambodge, Campus de Kep",
+        "location": "Krong Kep, Cambodge",
+        "period": "Août 2025 (Programme de deux semaines)",
+        "description": "Mentorat d'étudiants de premier cycle en fondamentaux de la programmation et stratégies de résolution de problèmes.",
+        "highlights": [
+          "Animation de cours sur le Calcul Avancé III et la programmation R, intégrant LaTeX pour la documentation technique."
+        ],
+        "skills": ["Enseignement", "Programmation R", "LaTeX", "Mentorat"]
+      },
+      {
+        "role": "Instructeur en Codage et Programmation",
+        "organization": "Tech for Kids Academy",
+        "location": "Phnom Penh, Cambodge",
+        "period": "Février 2025 -- Mai 2025",
+        "description": "Bénévole en tant que mentor, dirigeant la Division Junior à Tech for Kids Academy.",
+        "highlights": [
+          "Enseignement de la programmation Scratch (développée par le MIT) pour initier aux concepts de pensée computationnelle."
+        ],
+        "skills": ["Programmation Scratch", "Mentorat", "Pensée Computationnelle", "MIT Scratch"]
+      },
+      {
+        "role": "Tuteur en Mathématiques (Temps partiel)",
+        "organization": "Start Up Community",
+        "location": "Phnom Penh, Cambodge",
+        "period": "Février 2025 -- Juillet 2025",
+        "description": "Animation de sessions de formation en mathématiques dans un environnement éducatif du secteur privé.",
+        "highlights": [
+          "Reconnu comme membre exceptionnel du personnel pour l'efficacité pédagogique et l'engagement des étudiants.",
+          "Renforcement des compétences en gestion du temps, communication et pédagogie."
+        ],
+        "skills": ["Mathématiques", "Enseignement", "Communication", "Gestion du Temps"]
+      },
+      {
+        "role": "Instructeur en Mathématiques (Bénévole)",
+        "organization": "Institut de Technologie du Cambodge, Campus Principal",
+        "location": "Phnom Penh, Cambodge",
+        "period": "Février 2024 -- Juillet 2024",
+        "description": "Bénévole en tant que tuteur en mathématiques pour les étudiants de premier cycle.",
+        "highlights": [
+          "Enseignement du Calcul Avancé I & II aux étudiants ingénieurs en première année."
+        ],
+        "skills": ["Calcul Avancé", "Mathématiques", "Tutorat", "Formation en Ingénierie"]
       }
     ]
   },

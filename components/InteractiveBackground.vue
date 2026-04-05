@@ -1,11 +1,8 @@
 <template>
   <div class="digital-background absolute inset-0 overflow-hidden pointer-events-none">
-    <!-- Grid pattern -->
     <div class="grid-pattern" />
 
-    <!-- Matrix rain effect -->
     <canvas ref="matrixCanvas" class="matrix-canvas" />
-    <!-- Floating code snippets -->
     <div class="code-snippets">
       <div v-for="(snippet, index) in codeSnippets" :key="index" class="code-snippet" :style="{
         left: `${snippet.x}%`,
@@ -18,14 +15,12 @@
       </div>
     </div>
 
-    <!-- Glowing orbs (subtle) -->
     <div class="glow-orbs">
       <div class="glow-orb orb-1" />
       <div class="glow-orb orb-2" />
       <div class="glow-orb orb-3" />
     </div>
 
-    <!-- Circuit lines -->
     <svg class="circuit-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
       <path d="M 0,20 L 20,20 L 20,40 L 40,40 L 40,20 L 60,20 L 60,60 L 80,60 L 80,40 L 100,40" fill="none"
         :stroke="circuitColor" stroke-width="0.1" class="circuit-path" />
@@ -35,7 +30,6 @@
         :stroke="circuitColor" stroke-width="0.1" class="circuit-path circuit-path-3" />
     </svg>
 
-    <!-- Binary rain -->
     <div class="binary-rain">
       <span v-for="digit in binaryDigits" :key="digit.id" class="binary-digit" :style="{
         left: `${digit.left}%`,

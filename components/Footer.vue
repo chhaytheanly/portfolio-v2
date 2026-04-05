@@ -3,13 +3,13 @@
   <footer class="border-t border-[var(--color-border)] bg-[var(--color-bg-secondary)]">
     <div class="container-custom py-10">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
-        <NuxtLink to="/"
-          class="text-xl font-bold font-['Space_Grotesk'] tracking-tight hover:opacity-80 transition-opacity">
-          <span class="text-gradient">YN</span>
-        </NuxtLink>
+          <!-- <NuxtLink to="/"
+            class="text-xl font-bold font-['Space_Grotesk'] tracking-tight hover:opacity-80 transition-opacity">
+            <span class="text-gradient">YN</span>
+          </NuxtLink> -->
 
         <div class="flex items-center gap-4">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/chhaytheanly    " target="_blank" rel="noopener noreferrer"
             class="footer-social-link group relative w-10 h-10 flex items-center justify-center rounded-full bg-[var(--color-bg-tertiary)] border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 hover:bg-[var(--color-accent-light)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[var(--color-accent)]/10"
             aria-label="GitHub">
             <svg

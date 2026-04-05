@@ -70,7 +70,7 @@
                 <div v-if="edu.honors"
                   class="inline-flex items-center gap-2.5 px-3 py-2 rounded-xl bg-[var(--color-bg-tertiary)] border border-[var(--color-border)]/70">
                   <span class="text-xs text-[var(--color-text-tertiary)]">{{ tOr('education.honorsLabel', 'Honors')
-                  }}</span>
+                    }}</span>
                   <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ rt(edu.honors) }}</span>
                 </div>
               </div>

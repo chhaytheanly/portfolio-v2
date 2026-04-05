@@ -3,9 +3,8 @@
     'bg-[var(--color-bg-glass)] backdrop-blur-xl border-b border-[var(--color-border)] shadow-sm': isScrolled
   }">
     <nav class="container-custom flex items-center justify-between h-16 sm:h-20">
-      <!-- Logo -->
       <NuxtLink :to="localePath('/')" class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
-        <span class="text-gradient">YN</span>
+        <img src="/image/geek.jpg" alt="chhaythean_logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full" />
       </NuxtLink>
 
       <!-- Desktop Nav -->
@@ -19,7 +18,6 @@
       </div>
 
       <div class="flex items-center gap-3">
-        <!-- 🌐 Language Dropdown -->
         <div class="relative">
           <button ref="langBtn"
             class="p-2 rounded-full hover:bg-[var(--color-bg-tertiary)] transition flex items-center justify-center"
