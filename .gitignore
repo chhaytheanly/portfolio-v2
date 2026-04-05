@@ -11,7 +11,6 @@ dist/
 .nuxt/
 build/
 out/
-public/
 .cache/
 .vite/
 .storybook/
@@ -76,12 +75,16 @@ _redirects
 *.local
 .envrc
 node_modules/
-dist/ 
+dist/
 .nuxt/
 *.local
 *.log
 .DS_Store
 *.env
 *.env.*
+
+# Keep these in public
+!public/image/
+!public/resume.pdf
 
 .data/
