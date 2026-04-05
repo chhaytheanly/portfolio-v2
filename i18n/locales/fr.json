@@ -2,84 +2,104 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "education": "Formation",
+    "experience": "Expérience",
     "projects": "Projets",
     "blog": "Blog",
     "contact": "Contact"
   },
-  "common": {
-    "language": "Langue",
-    "darkMode": "Mode sombre",
-    "lightMode": "Mode clair",
-    "scrollDown": "Défiler vers le bas"
-  },
-  "footer": {
-    "rights": "Tous droits réservés.",
-    "builtWith": "Construit avec Nuxt 3 & Tailwind CSS"
-  },
   "hero": {
-    "available": "Disponible pour de nouveaux projets",
     "greeting": "Bonjour, je suis",
-    "title": "Développeur Full-Stack & Designer",
-    "subtitle": "Je crée des expériences numériques belles, performantes et accessibles, du concept au déploiement.",
-    "ctaProjects": "Voir mes projets",
+    "title": "Chhaythean LY",
+    "subtitle": "Étudiant en Data Science spécialisé en IA, systèmes backend et DevOps — axé sur la conception de systèmes intelligents, évolutifs et performants avec une architecture propre.",
+    "available": "Ouvert aux opportunités",
+    "ctaProjects": "Voir les projets",
     "ctaContact": "Me contacter"
   },
   "about": {
     "pageTitle": "À propos de moi",
-    "bio1": "Je suis un développeur full-stack passionné avec un œil pour le design et un amour pour la création d'expériences numériques fluides.",
-    "bio2": "Avec une expertise couvrant les frameworks frontend, les systèmes backend et l'infrastructure cloud, je donne vie aux idées grâce à un code propre et un design réfléchi.",
+    "bio1": "Je suis étudiant en quatrième année de Data Science, spécialisé en intelligence artificielle, développement backend et DevOps. J’aime concevoir des systèmes intelligents et résoudre des problèmes computationnels complexes à travers une architecture propre et évolutive. Mon travail met l’accent sur la performance, la maintenabilité et l’apprentissage continu.",
+    "bio2": "En dehors du code, je contribue à des projets open source et développe des projets expérimentaux en IA, tout en explorant les architectures backend et les outils bas niveau afin d’améliorer mon efficacité et mes compétences en ingénierie.",
     "downloadResume": "Télécharger le CV",
-    "skills": "Compétences"
+    "skills": "Compétences & Technologies"
   },
   "projects": {
     "pageTitle": "Projets",
-    "pageSubtitle": "Une sélection de mes travaux récents et projets personnels",
-    "viewAll": "Voir tous les projets",
-    "backToProjects": "Retour aux projets",
-    "liveDemo": "Démo en direct",
+    "pageSubtitle": "Une sélection de projets axés sur l’IA, les systèmes backend et l’ingénierie orientée performance.",
+    "liveDemo": "Démo",
+    "github": "GitHub",
     "all": "Tous",
     "fullstack": "Full-Stack",
     "frontend": "Frontend",
     "mobile": "Mobile",
-    "github": "GitHub"
+    "backToProjects": "Retour aux projets",
+    "viewAll": "Voir tout"
   },
   "blog": {
     "pageTitle": "Blog",
-    "pageSubtitle": "Réflexions, tutoriels et conseils sur le développement web",
-    "viewAll": "Voir tous les articles",
-    "backToPosts": "Retour aux articles",
+    "pageSubtitle": "Analyses, expérimentations et réflexions sur l’IA, le backend et l’architecture des systèmes.",
     "minRead": "min de lecture",
-    "previous": "Précédent",
-    "next": "Suivant",
-    "readMore": "Lire la suite"
+    "readMore": "Lire la suite",
+    "backToPosts": "Retour aux articles",
+    "previous": "← Précédent",
+    "next": "Suivant →",
+    "viewAll": "Voir tout"
   },
   "contact": {
     "pageTitle": "Contact",
-    "pageSubtitle": "Vous avez un projet en tête ? Travaillons ensemble !",
+    "pageSubtitle": "Une idée, un projet ou une opportunité ? Construisons quelque chose d’impactant ensemble.",
     "name": "Nom",
-    "namePlaceholder": "Votre nom",
-    "nameRequired": "Le nom est requis",
     "email": "E-mail",
-    "emailPlaceholder": "votre email a exemple point com",
-    "emailRequired": "L'e-mail est requis",
-    "emailInvalid": "Veuillez entrer un e-mail valide",
     "message": "Message",
+    "namePlaceholder": "Chhaythean LY",
+    "emailPlaceholder": "chhaytheanly3{'@'}gmail.com",
     "messagePlaceholder": "Parlez-moi de votre projet...",
-    "messageRequired": "Le message est requis",
-    "send": "Envoyer le message",
-    "sending": "Envoi en cours...",
+    "send": "Envoyer",
+    "sending": "Envoi...",
     "success": "Message envoyé avec succès !",
-    "error": "Échec de l'envoi du message. Veuillez réessayer."
+    "error": "Échec de l’envoi. Veuillez réessayer.",
+    "nameRequired": "Le nom est requis",
+    "emailRequired": "L’e-mail est requis",
+    "emailInvalid": "Veuillez entrer un e-mail valide",
+    "messageRequired": "Le message est requis"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "builtWith": "Construit avec Nuxt 3, Tailwind CSS et un accent sur la performance et l’architecture propre"
+  },
+  "education": {
+    "pageTitle": "Formation",
+    "pageSubtitle": "Mon parcours académique et mes qualifications",
+    "items": [
+      {
+        "degree": "Master en Informatique",
+        "institution": "Nom de l'Université",
+        "logo": "/logos/university-master.png",
+        "period": "2022 - 2024",
+        "description": "Spécialisation en intelligence artificielle et apprentissage automatique. Recherche sur le traitement du langage naturel et thèse sur les architectures de réseaux de neurones avancés.",
+        "gpa": "3.9/4.0",
+        "courses": ["Apprentissage Automatique", "Apprentissage Profond", "TLN", "Vision par Ordinateur"]
+      },
+      {
+        "degree": "Licence en Génie Logiciel",
+        "institution": "Nom de l'Université",
+        "logo": "/logos/university-bachelor.png",
+        "period": "2018 - 2022",
+        "description": "Acquisition de solides compétences en développement logiciel, algorithmes et conception de systèmes. Direction de plusieurs projets d'équipe et participation à des compétitions de programmation.",
+        "gpa": "3.8/4.0",
+        "courses": ["Structures de Données", "Algorithmes", "Développement Web", "Systèmes de Gestion de Base de Données"]
+      }
+    ]
+  },
+  "common": {
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair",
+    "language": "Langue",
+    "scrollDown": "Défiler vers le bas"
   },
   "notFound": {
     "title": "Page non trouvée",
-    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
-    "goHome": "Retour à l'accueil"
-  },
-  "welcome": "Bienvenue",
-  "navigation": {
-    "home": "Accueil",
-    "about": "À propos",
-    "contact": "Contact"
+    "description": "La page que vous recherchez n’existe pas ou a été déplacée.",
+    "goHome": "Retour à l’accueil"
   }
 }

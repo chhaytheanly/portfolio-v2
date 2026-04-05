@@ -5,7 +5,8 @@
     </h1>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <ScrollReveal class="md:col-span-1">
-        <div class="aspect-square bg-[var(--color-bg-tertiary)] rounded-[var(--radius-lg)] overflow-hidden flex items-center justify-center">
+        <div
+          class="aspect-square bg-[var(--color-bg-tertiary)] rounded-[var(--radius-lg)] overflow-hidden flex items-center justify-center">
           <div class="text-6xl font-bold text-[var(--color-text-tertiary)]">
             YN
           </div>
@@ -26,17 +27,10 @@
 
         <ScrollReveal :delay="200">
           <div class="flex flex-wrap gap-4">
-            <a
-              href="/resume.pdf"
-              class="btn-primary"
-              download
-            >
+            <a href="/resume.pdf" class="btn-primary" download>
               {{ $t('about.downloadResume') }}
             </a>
-            <NuxtLink
-              :to="localePath('/contact')"
-              class="btn-secondary"
-            >
+            <NuxtLink :to="localePath('/contact')" class="btn-secondary">
               {{ $t('contact.pageTitle') }}
             </NuxtLink>
           </div>
@@ -48,13 +42,19 @@
               {{ $t('about.skills') }}
             </h3>
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div
-                v-for="skill in skills"
-                :key="skill"
-                class="skill-tag flex items-center gap-2 px-3 py-2 rounded-[var(--radius-md)] bg-[var(--color-bg-tertiary)] border border-[var(--color-border)] hover:border-[var(--color-accent)]/30 hover:bg-[var(--color-accent-light)] transition-all duration-300 cursor-default group"
-              >
-                <div class="w-2 h-2 rounded-full bg-[var(--color-accent)] group-hover:scale-125 transition-transform duration-300" />
-                <span class="text-sm font-medium group-hover:text-[var(--color-accent)] transition-colors duration-300">{{ skill }}</span>
+              <div v-for="skill in skills" :key="skill.name" class="group flex flex-col items-center justify-center gap-2 p-4 rounded-xl
+         bg-[var(--color-bg-tertiary)] border border-[var(--color-border)]
+         hover:border-[var(--color-accent)]/40
+         hover:bg-[var(--color-accent-light)]
+         transition-all duration-300 cursor-default
+         hover:-translate-y-1 hover:shadow-lg">
+                <Icon :icon="skill.icon" class="text-3xl transition-transform duration-300 group-hover:scale-110" />
+
+                <span class="text-sm font-medium text-center
+               group-hover:text-[var(--color-accent)]
+               transition-colors duration-300">
+                  {{ skill.name }}
+                </span>
               </div>
             </div>
           </BaseCard>
@@ -65,6 +65,7 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 definePageMeta({
   layout: 'default',
 })
@@ -78,8 +79,26 @@ useSeoMeta({
 })
 
 const skills = [
-  'TypeScript', 'Vue 3', 'Nuxt 3', 'Node.js', 'Tailwind CSS',
-  'PostgreSQL', 'GraphQL', 'Docker', 'AWS', 'Figma',
-  'Git', 'CI/CD',
+  { name: 'Python', icon: 'logos:python' },
+  { name: 'TypeScript', icon: 'logos:typescript-icon' },
+  { name: 'C/C++', icon: 'logos:c-plusplus' },
+  { name: 'Rust', icon: 'logos:rust' },
+  { name: 'Pytorch', icon: 'logos:pytorch' },
+  { name: 'React', icon: 'logos:react' },
+  { name: 'Node.js', icon: 'logos:nodejs-icon' },
+  { name: 'Tailwind CSS', icon: 'logos:tailwindcss-icon' },
+  { name: 'PostgreSQL', icon: 'logos:postgresql' },
+  { name: 'MySQL', icon: 'logos:mysql' },
+  { name: 'Linux', icon: 'logos:linux-tux' },
+  { name: 'Docker', icon: 'logos:docker-icon' },
+  { name: 'AWS', icon: 'logos:aws' },
+  { name: 'Git', icon: 'logos:git-icon' },
+  { name: 'CI/CD', icon: 'mdi:infinity' },
 ]
 </script>
+
+<style scoped>
+.skill-tag:hover {
+  box-shadow: 0 0 20px rgba(var(--color-accent-rgb), 0.2);
+}
+</style>

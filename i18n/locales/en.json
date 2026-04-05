@@ -2,28 +2,30 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "education": "Education",
+    "experience": "Experience",
     "projects": "Projects",
     "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "title": "Your Name",
-    "subtitle": "Full-stack developer & designer crafting digital experiences that are beautiful, accessible, and blazingly fast.",
-    "available": "Available for new projects",
+    "title": "Chhaythean LY",
+    "subtitle": "Data Science student specializing in AI, backend systems, and DevOps — focused on building intelligent, scalable systems with clean architecture and high-performance code.",
+    "available": "Open to opportunities",
     "ctaProjects": "View Projects",
     "ctaContact": "Get in Touch"
   },
   "about": {
     "pageTitle": "About Me",
-    "bio1": "I'm a full-stack developer with 5+ years of experience building web applications that users love. I specialize in Nuxt.js, Vue, and modern TypeScript, with a deep passion for performance, accessibility, and clean code.",
-    "bio2": "When I'm not coding, you'll find me contributing to open-source projects, writing about web development, or exploring the latest in AI and design systems.",
+    "bio1": "I’m a fourth-year Data Science student focused on Artificial Intelligence, backend development, and DevOps. I enjoy building intelligent systems and solving complex computational problems through clean, scalable architecture. My work emphasizes performance, maintainability, and continuous learning in modern software engineering.",
+    "bio2": "When I’m not coding, I contribute to open-source and build experimental AI projects while exploring backend architectures and low-level tools to improve my efficiency and deepen my engineering skills.",
     "downloadResume": "Download Resume",
     "skills": "Skills & Technologies"
   },
   "projects": {
     "pageTitle": "Projects",
-    "pageSubtitle": "A selection of my recent work.",
+    "pageSubtitle": "A selection of projects focused on AI, backend systems, and performance-driven engineering.",
     "liveDemo": "Live Demo",
     "github": "GitHub",
     "all": "All",
@@ -35,7 +37,7 @@
   },
   "blog": {
     "pageTitle": "Blog",
-    "pageSubtitle": "Thoughts, tutorials, and case studies on web development and design.",
+    "pageSubtitle": "Insights, experiments, and deep dives into AI, backend engineering, and system design.",
     "minRead": "min read",
     "readMore": "Read More",
     "backToPosts": "Back to Posts",
@@ -45,12 +47,12 @@
   },
   "contact": {
     "pageTitle": "Contact",
-    "pageSubtitle": "Get in touch for collaborations, freelance work, or just to say hi.",
+    "pageSubtitle": "Have an idea, project, or opportunity? Let’s build something impactful together.",
     "name": "Name",
     "email": "Email",
     "message": "Message",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "you{'@'}example.com",
+    "namePlaceholder": "Chhaythean LY",
+    "emailPlaceholder": "chhaytheanly3{'@'}gmail.com",
     "messagePlaceholder": "Tell me about your project...",
     "send": "Send Message",
     "sending": "Sending...",
@@ -63,7 +65,31 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "builtWith": "Built with Nuxt 3 & Tailwind CSS"
+    "builtWith": "Built with Nuxt 3, Tailwind CSS, and a focus on performance & clean architecture"
+  },
+  "education": {
+    "pageTitle": "Education",
+    "pageSubtitle": "My academic background and qualifications",
+    "items": [
+      {
+        "degree": "Master of Science in Computer Science",
+        "institution": "University Name",
+        "logo": "/logos/university-master.png",
+        "period": "2022 - 2024",
+        "description": "Specialized in artificial intelligence and machine learning. Conducted research on natural language processing and completed thesis on advanced neural network architectures.",
+        "gpa": "3.9/4.0",
+        "courses": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision"]
+      },
+      {
+        "degree": "Bachelor of Science in Software Engineering",
+        "institution": "University Name",
+        "logo": "/logos/university-bachelor.png",
+        "period": "2018 - 2022",
+        "description": "Built a strong foundation in software development, algorithms, and system design. Led multiple team projects and participated in coding competitions.",
+        "gpa": "3.8/4.0",
+        "courses": ["Data Structures", "Algorithms", "Web Development", "Database Systems"]
+      }
+    ]
   },
   "common": {
     "darkMode": "Dark Mode",
