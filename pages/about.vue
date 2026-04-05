@@ -7,7 +7,7 @@
       <ScrollReveal class="md:col-span-1">
         <div class="profile-frame group">
           <div class="profile-frame__inner">
-            <img src="~/assets/images/chhaytheanly.jpg" alt="Profile Picture" class="profile-frame__image" loading="lazy" />
+            <img :src="imageBase('/image/chhaytheanly.jpg')" alt="Profile Picture" class="profile-frame__image" loading="lazy" />
           </div>
         </div>
       </ScrollReveal>
@@ -70,6 +70,7 @@ definePageMeta({
 
 const { t } = useI18n()
 const localePath = useLocalePath()
+const imageBase = useImageBase()
 
 useSeoMeta({
   title: () => `${t('about.pageTitle')} — ${t('hero.title')}`,
