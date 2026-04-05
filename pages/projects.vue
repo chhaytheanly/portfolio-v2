@@ -32,7 +32,7 @@
           <div
             class="relative overflow-hidden rounded-2xl border border-[var(--color-border)]/60 bg-[var(--color-bg-glass)]/60 backdrop-blur-sm transition-all duration-500 group-hover:border-[var(--color-accent)]/40 group-hover:shadow-xl group-hover:-translate-y-2 h-full flex flex-col">
             <div class="relative aspect-video overflow-hidden flex-shrink-0">
-              <img v-if="project.thumbnail" :src="project.thumbnail" :alt="project.title"
+              <img v-if="project.thumbnail" :src="imageBase(project.thumbnail)" :alt="project.title"
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy" width="600" height="340" />
               <div v-else
@@ -162,6 +162,8 @@ useSeoMeta({
 })
 
 const activeCategory = ref('all')
+
+const imageBase = useImageBase()
 
 const categories = computed(() => [
   { label: t('projects.all'), value: 'all' },
