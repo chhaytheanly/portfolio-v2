@@ -3,7 +3,7 @@ title: 'Water-Level Monitoring System'
 slug: 'water-level-monitoring'
 description: 'Intelligent IoT water-level monitoring system with machine learning-powered leak detection and automated response mechanism'
 longDescription: 'Designed and developed an intelligent water-level monitoring system integrating IoT sensors with machine learning. Implemented real-time leak detection and automated response mechanism to shut off water flow and prevent waste or damage. Built end-to-end pipeline including data collection (Arduino), backend processing (Python/PHP), and database management (SQL). Developed as a self-initiated project with no budget, demonstrating strong problem-solving and engineering skills. Successfully accepted and presented at an AI Conference in Malaysia.'
-thumbnail: '/images/projects/water-level-monitoring.jpg'
+thumbnail: '/project/water.jpg'
 images:
   - '/images/projects/water-level-monitoring-1.jpg'
   - '/images/projects/water-level-monitoring-2.jpg'

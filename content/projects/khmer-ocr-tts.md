@@ -3,7 +3,7 @@ title: 'Khmer Text-to-Speech & OCR System'
 slug: 'khmer-ocr-tts'
 description: 'End-to-end Khmer OCR extraction and Text-to-Speech pipeline using transfer learning and advanced image preprocessing'
 longDescription: 'Designed and implemented an end-to-end Khmer OCR extraction and Text-to-Speech (TTS) pipeline under limited-resource conditions. Applied transfer learning on pre-trained vision-language and speech models (HuggingFace) to adapt them for Khmer text recognition and speech synthesis. Built advanced image preprocessing techniques (denoising, binarization, geometric correction) to enhance OCR performance on real-world documents. Optimized training and inference using PyTorch with CUDA acceleration, reducing inference latency and improving deployment efficiency. Developed RESTful APIs using FastAPI for scalable model serving and integration with downstream applications.'
-thumbnail: '/images/projects/khmer-ocr-tts.jpg'
+thumbnail: '/project/khmer-arn.png'
 images:
   - '/images/projects/khmer-ocr-tts-1.jpg'
   - '/images/projects/khmer-ocr-tts-2.jpg'
