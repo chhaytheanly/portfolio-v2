@@ -10,7 +10,15 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
   ],
 
-  ssr: false,
+  ssr: true,
+
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true
+    }
+  },
+
   devtools: { enabled: true },
 
   app: {
@@ -172,7 +180,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    enabled: true,
-    url: "https://chhaytheanly.github.io/portfolio-v2",
-  },
+    siteUrl: 'https://chhaytheanly.github.io/portfolio-v2',
+    gzip: true
+  }
 })
