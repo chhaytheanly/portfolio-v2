@@ -7,7 +7,8 @@
       <ScrollReveal class="md:col-span-1">
         <div class="profile-frame group">
           <div class="profile-frame__inner">
-            <img :src="imageBase('/image/chhaytheanly.jpg')" alt="Profile Picture" class="profile-frame__image" loading="lazy" />
+            <img :src="imageBase('/image/chhaytheanly.jpg')" alt="Profile Picture" class="profile-frame__image"
+              loading="lazy" />
           </div>
         </div>
       </ScrollReveal>
@@ -26,7 +27,7 @@
 
         <ScrollReveal :delay="200">
           <div class="flex flex-wrap gap-4">
-            <a href="/public/cv/Curriculum_Vitae.pdf" class="btn-primary" download>
+            <a href="/cv/Curriculum_Vitae.pdf" class="btn-primary" download>
               {{ $t('about.downloadResume') }}
             </a>
             <NuxtLink :to="localePath('/contact')" class="btn-secondary">
