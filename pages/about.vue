@@ -26,7 +26,7 @@
 
         <ScrollReveal :delay="200">
           <div class="flex flex-wrap gap-4">
-            <a href="/resume.pdf" class="btn-primary" download>
+            <a href="/public/cv/Curriculum_Vitae.pdf" class="btn-primary" download>
               {{ $t('about.downloadResume') }}
             </a>
             <NuxtLink :to="localePath('/contact')" class="btn-secondary">

@@ -6,8 +6,6 @@
       <NuxtLink :to="localePath('/')" class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
         <img src="/image/geek.jpg" alt="chhaythean_logo" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full" />
       </NuxtLink>
-
-      <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-2">
         <NuxtLink v-for="item in navItems" :key="item.to" :to="localePath(item.to)"
           class="nav-link px-3 py-2 text-sm font-medium relative"
@@ -41,15 +39,12 @@
         </div>
 
         <ThemeToggle />
-
-        <!-- Mobile -->
         <button class="md:hidden p-2" @click="mobileMenuOpen = !mobileMenuOpen">
           ☰
         </button>
       </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <Transition name="mobile-menu">
       <div v-if="mobileMenuOpen" class="md:hidden bg-[var(--color-bg-glass)] border-t">
         <div class="p-4 space-y-2">

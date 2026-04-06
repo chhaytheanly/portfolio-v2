@@ -84,6 +84,7 @@ dist/
 *.env.*
 
 # Keep these in public
+!public/cv/
 !public/image/
 !public/project/
 !public/logo/
