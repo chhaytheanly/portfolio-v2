@@ -2,7 +2,6 @@
   <div class="relative">
     <section
       class="min-h-[90vh] flex flex-col items-center justify-center container-custom text-center relative overflow-hidden">
-      <!-- Subtle background decoration -->
       <DigitalBackground />
 
       <div class="relative z-10">
@@ -10,7 +9,7 @@
           class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-accent-light)] border border-[var(--color-accent)]/20 mb-6">
           <span class="w-2 h-2 rounded-full bg-[var(--color-accent)] animate-pulse" />
           <span class="text-sm font-medium text-[var(--color-accent)]">{{ $t('hero.available') || 'Available for work'
-          }}</span>
+            }}</span>
         </div>
         <p v-motion="'fade-in'" :style="{ transitionDelay: '50ms' }"
           class="text-lg sm:text-xl text-[var(--color-text-secondary)] mb-4 font-medium">
@@ -42,7 +41,8 @@
 
         <div v-motion="'fade-in'" :style="{ transitionDelay: '400ms' }"
           class="flex items-center justify-center gap-8 mt-12">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-enhanced group">
+          <a href="https://github.com/chhaytheanly" target="_blank" rel="noopener noreferrer"
+            class="social-link-enhanced group">
             <div class="icon-bg" />
             <svg class="w-5 h-5 relative z-10" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd"
@@ -82,7 +82,7 @@
               {{ $t('about.bio2') }}
             </p>
             <div class="flex flex-wrap gap-4">
-              <a href="/resume.pdf" class="btn-primary text-sm" download>
+              <a href="/public/cv/Curriculum_Vitae.pdf" class="btn-primary text-sm" download>
                 {{ $t('about.downloadResume') }}
               </a>
               <NuxtLink :to="localePath('/contact')" class="btn-secondary text-sm">
@@ -164,7 +164,7 @@
                   <time class="text-sm text-[var(--color-text-tertiary)]">{{ formatDate(post.date) }}</time>
                   <span class="text-sm text-[var(--color-text-tertiary)]">·</span>
                   <span class="text-sm text-[var(--color-text-tertiary)]">{{ post.readTime }} {{ $t('blog.minRead')
-                  }}</span>
+                    }}</span>
                 </div>
                 <h3 class="heading-sm mb-2 group-hover:text-[var(--color-accent)] transition-colors duration-300">{{
                   post.title }}</h3>
@@ -251,7 +251,7 @@ const imageBase = useImageBase()
 useCardGlow()
 
 useSeoMeta({
-  title: () => `${t('hero.title')} — Full-Stack Developer & Designer`,
+  title: () => `${t('hero.title')} — AI Enthusiast & Software Developer`,
   description: () => t('hero.subtitle'),
 })
 

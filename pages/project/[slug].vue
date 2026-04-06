@@ -19,7 +19,6 @@
             <p class="body-lg text-[var(--color-text-secondary)] mb-5">
                 {{ project.description }}
             </p>
-
             <div class="flex flex-wrap gap-2 mt-4">
                 <BaseBadge v-for="tech in project.tech" :key="tech" variant="subtle">
                     {{ tech }}
@@ -27,7 +26,33 @@
             </div>
         </header>
 
-        <ContentRenderer v-if="project" :value="project" class="prose prose-lg max-w-none" />
+        <!-- Hero image and action links -->
+        <div v-if="project.thumbnail" class="max-w-3xl mx-auto mb-8">
+            <img :src="imageBase(project.thumbnail)" :alt="project.title"
+                class="w-full rounded-xl shadow-lg object-cover" />
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 mb-8">
+            <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener noreferrer"
+                class="btn-primary">
+                Live Demo
+            </a>
+            <a v-if="project.githubUrl" :href="project.githubUrl" target="_blank" rel="noopener noreferrer"
+                class="btn-secondary">
+                View on GitHub
+            </a>
+            <div v-if="project.images && project.images.length"
+                class="ml-auto text-sm text-[var(--color-text-tertiary)]">
+                {{ project.images.length }} images
+            </div>
+        </div>
+
+        <p v-if="project.longDescription" class="body-md text-[var(--color-text-secondary)] max-w-3xl mx-auto mb-6">{{
+            project.longDescription }}</p>
+
+        <section class="prose prose-lg max-w-none mx-auto">
+            <ContentRenderer v-if="project" :value="project" />
+        </section>
     </article>
 
     <div v-else class="container-custom section-padding max-w-3xl mx-auto text-center py-20">
@@ -80,3 +105,55 @@ useSeoMeta({
     description: () => project.value?.description ?? '',
 })
 </script>
+
+<style scoped>
+/* Improve default content rendering inside prose */
+.prose img {
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+}
+
+.prose pre {
+    background: var(--color-bg-tertiary);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.prose code {
+    background: rgba(0, 0, 0, 0.04);
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.35rem;
+}
+
+/* Make markdown headings bold and prominent inside ContentRenderer */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    font-family: "Space Grotesk", "Inter", sans-serif;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-top: 1.25rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.15;
+}
+
+.prose h1 {
+    font-size: 1.75rem;
+}
+
+.prose h2 {
+    font-size: 1.5rem;
+}
+
+.prose h3 {
+    font-size: 1.25rem;
+}
+
+.prose strong {
+    font-weight: 700;
+}
+</style>
