@@ -23,9 +23,15 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'apple-touch-icon', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/portfolio-v2/logo/favicon.svg' },
+        { rel: 'apple-touch-icon', href: '/portfolio-v2/logo/favicon.svg' },
       ],
+      meta: [
+        { name: 'description', content: 'Chhaythean Portfolio - AI Enthusiast' },
+        { name: 'keywords', content: 'chhaythean portfolio, Chhaythean, Portfolio, AI, Artificial Intelligence, Machine Learning, Deep Learning' },
+        { name: 'author', content: 'Chhaythean' },
+        { content: 'google00ff2868fffc3b8c.html', name: 'google-site-verification' },
+      ]
     },
     pageTransition: { name: 'page', mode: 'out-in' },
   },
